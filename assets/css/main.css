@@ -13,6 +13,7 @@
   font-family: "Montserrat", sans-serif;
   color: #383535;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 *:focus {
@@ -263,6 +264,16 @@ nav .quote a {
   .slogan h1 {
     font-size: 34px;
   }
+
+  .slogan p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-height: 800px) {
+  .slogan {
+    height: 50vh;
+  }
 }
 
 /* Slogan ##### End ##### */
@@ -412,6 +423,10 @@ nav .quote a {
   .main .intro .project-counter li {
     margin-top: 10px;
   }
+
+  .main {
+    padding: 0 15px;
+  }
 }
 /* Main ##### End ##### */
 
@@ -430,6 +445,7 @@ nav .quote a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 200px);
+  grid-gap: 5px;
 }
 
 .projects .grid img {
